@@ -18,3 +18,15 @@ console.log(typeof(scoreInString));
 
 // like this only we have use Boolean, Object etc for type conversion
 
+
+// operations
+
+let gameCounter = 100;
+
+let gameConnterValue = gameCounter++;
+
+console.log("GameCounter : ",gameCounter);
+
+console.log("GameConterValue: ",gameConnterValue);
+
+
