@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="1">
+        <h1 class="test">
+            Hello Yashas 
+        </h1>
+    </div>
+</body>
+<script>
+    const pElement = document.createElement('p');
+    pElement.className = 'newPara';
+    pElement.style.color = 'blue';
+    pElement.style.backgroundColor = 'white';
+    const textNode = document.createTextNode("Hello From New Element Para");
+    pElement.append(textNode);
+    const div = document.querySelector('#1');
+    div.append(pElement);
+</script>
+</html>
