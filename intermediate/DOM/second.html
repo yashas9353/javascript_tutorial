@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+<body>
+    <div class="div1test">
+        <h1 id="h1test">
+            Hello World!
+        </h1>
+    </div>
+</body>
+<script>
+    const h1 = document.querySelector('#h1test');
+    const newH1 = document.createElement('h1');
+    newH1.setAttribute('style','color:green;');
+    newH1.append(document.createTextNode("Hello World Changed"));
+    h1.replaceWith(newH1);
+</script>
+</html>
